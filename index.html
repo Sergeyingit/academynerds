@@ -124,7 +124,27 @@
       </ul>
     </div>
   </footer>
-  
-
+  <section class="modal back-communication">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <p>Напишите нам</p>
+    <form>
+      <p class="communication-item">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="communication-item">
+        <label for="email">Ваш e-mail:</label>
+        <input type="text" name="email" id="email" placeholder="email@example.com">
+      </p>
+      <p class="communication-item">
+        <label for="letter">Текст письма:</label>
+        <textarea id="letter" name="letter" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button class="button close-button" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </section>
 </body>
 </html>
