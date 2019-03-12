@@ -5,11 +5,11 @@
   <title>Nerds catalog</title>
 </head>
 <body>
-  <header>
-    <a class="logo" href="index.html">
+  <header class="main-header">
+    <a class="main-hader-logo" href="index.html">
       <img src="#" width="1" height="1" alt="logo">
     </a>
-    <nav>
+    <nav class="main-navigation">
       <ul class="site-navigation">
         <li>
           <a href="#">Студия</a>
@@ -25,7 +25,7 @@
         </li>
       </ul>
       <ul class="user-navigation">
-        <li>
+        <li class="basket">
           <a href="">Корзина</a>
         </li>
       </ul>
@@ -35,7 +35,68 @@
     <h1>Магазин готовых шаблонов</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Стоимость:</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <button type="button" class="toggle toggle-min"><span class="visually-hidden">Цена ниже</span></button>
+              <button type="button" class="toggle toggle-max"><span class="visually-hidden">Цена выше</span></button>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="15000"></label>
+            </div>
+            
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-radio" type="radio" name="grid" id="adaptive" value="adaptive" checked>
+              <label for="adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-radio" type="radio" name="grid" id="fixed" value="fixed">
+              <label for="fixed">Фиксированная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-radio" type="radio" name="grid" id="rubber" value="rubber">
+              <label for="rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-checkbox" type="checkbox" name="slider" id="slider" checked>
+              <label for="slider">Слайдер</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-checkbox" type="checkbox" name="advantages" id="advantages">
+              <label for="advantages">Блок преимуществ</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-checkbox" type="checkbox" name="news" id="news" checked>
+              <label for="news">Новости</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-checkbox" type="checkbox" name="gallery" id="gallery">
+              <label for="gallery">Галерея</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-checkbox" type="checkbox" name="basket" id="basket">
+              <label for="basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="button filter-button">Показать</button>
+      </form>
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Список шаблонов</h2>
