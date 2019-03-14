@@ -9,10 +9,10 @@
 </head>
 <body>
   <header class="main-header">
-    <a class="main-hader-logo">
-      <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds">
-    </a>
     <nav class="main-navigation">
+      <a class="main-hader-logo">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds">
+      </a>
       <ul class="site-navigation">
         <li>
           <a href="#">Студия</a>
@@ -21,7 +21,7 @@
           <a href="#">Клиенты</a>
         </li>
         <li>
-          <a href="#">Магазин</a>
+          <a href="catalog.html">Магазин</a>
         </li>
         <li>
           <a href="#">Контакты</a>
@@ -45,19 +45,19 @@
           <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="#" class="button">Заказать</a>
+          <a href="#" class="button services-button-red">Заказать</a>
         </li>
         <li class="services-item">
           <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="#" class="button">Заказать</a>
+          <a href="#" class="button services-button-green">Заказать</a>
         </li>
         <li class="services-item">
           <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a href="#" class="button">Заказать</a>
+          <a href="#" class="button services-button-yellow">Заказать</a>
         </li>
       </ul>
     </section>
@@ -65,9 +65,9 @@
       <h2 class="visually-hidden">Информация о нас</h2>
       <div class="column-left">
         <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <p>Выполняем заказы на разработку:</p>
-          <ul>
+        <p class="description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <p class="list-title">Выполняем заказы на разработку:</p>
+          <ul class="about-us-services-list">
             <li>
               Веб-сайтов любой сложности
             </li>
@@ -82,13 +82,13 @@
       <div class="column-right">
         <img src="img/nerds-illustration.png" width="360" height="208" alt="Nerds">
         <table>
-          <caption>с 2004 года Любим точность во всем:</caption>
-          <tr>
+          <caption class="table-title">с 2004 года Любим точность во всем:</caption>
+          <tr class="line-number">
             <td>146%</td>
             <td>100%</td>
             <td>50%</td>
           </tr>
-          <tr>
+          <tr class="line-text">
             <td>Уровень самоотдачи</td>
             <td>Соблюдение сроков</td>
             <td>Минимальная предоплата</td>
@@ -98,7 +98,7 @@
     </section>
     <section class="portfolio">
       <h2 class="visually-hidden">Наше портфолио</h2>
-      <ul>
+      <ul class="portfolio-list">
       <li>
       	<a href="https://htmlacademy.ru/intensive/htmlcss">
       	  <img src="img/logo-1.png" width="199" height="68" alt="html academy">
@@ -124,7 +124,7 @@
     <div class="map-contacts">
       <img src="img/map.jpg" width="1440" height="416" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       <div class="contacts">
-        <p>Nerds design studio</p>
+        <p class="contacts-title">Nёrds design studio</p>
         <p class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p class="phone">тел. +7 (812) 275-75-75</p>
         <a href="#" class="button">Напишите нам</a>
@@ -133,27 +133,27 @@
   </main>
   <footer>
     <div class="social">
-      <div class="action">
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </div>
       <ul class="social-list">
         <li>
-          <a href="#"><span class="visually-hidden">Контакт</span></a>
+          <a class="social-button" href="#"><span class="visually-hidden">Контакт</span></a>
         </li>
         <li>
-          <a href="#"><span class="visually-hidden">Фейсбук</span></a>
+          <a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a>
         </li>
         <li>
-          <a href="#"><span class="visually-hidden">Инстаграм</span></a>
+          <a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a>
         </li>
       </ul>
+      <div class="action">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </div>
   </footer>
   <section class="modal back-communication">
     <h2 class="visually-hidden">Форма обратной связи</h2>
-    <p>Напишите нам</p>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <p class="modal-title">Напишите нам</p>
+    <form class="communication-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="communication-item">
         <label for="name">Ваше имя:</label>
         <input type="text" name="name" id="name" placeholder="Имя Фамилия">
@@ -166,7 +166,7 @@
         <label for="letter">Текст письма:</label>
         <textarea id="letter" name="letter" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="button" type="submit">Отправить</button>
+      <button class="button modal-button" type="submit">Отправить</button>
     </form>
     <button class="button close-button" type="button">
       <span class="visually-hidden">Закрыть</span>
